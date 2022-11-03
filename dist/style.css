@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Source+Code+Pro:wght@500&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Quicksand", sans-serif;
+  background-color: hsl(100, 0%, 90%);
+  
+  font-size: 15px;
+}
+
+#navbar {
+  display:grid;
+  grid-auto-flow: column;
+  justify-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  font-size: 3rem;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg,     
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.15) 65%,
+    rgba(0, 0, 0, 0.075) 75.5%,
+    rgba(0, 0, 0, 0.037) 82.85%,
+    rgba(0, 0, 0, 0.019) 88%,
+    rgba(0, 0, 0, 0) 100%); 
+  padding: 20px 0px 100px;
+}
+.topline{
+  width: 1000%;
+  border-color: white;
+  margin: 30px 0px;
+  box-shadow: 0px 0px 10px hsl(215, 100%, 50%),0px 0px 10px hsla(215, 100%, 50%, .75);
+  
+}
+.navlink {
+  font-size: 3rem;
+  text-decoration: none;
+  color: hsl(232, 33%, 100%);
+  padding: 5px 0px 5px;
+  text-shadow:0px 0px 10px hsl(215, 100%, 50%),0px 0px 10px hsla(215, 100%, 50%, .75),0px 0px 150px hsla(215, 100%, 50%, .75);
+  transition: text-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out 50ms;
+}
+
+.navlink:hover {
+  text-shadow:0px 30px 10px hsl(320, 100%, 50%),0px 0px 10px hsl(320, 100%, 50%);
+}
+.navlink-name{
+
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50px;
+  box-shadow:inset 0px 0px 10px hsl(215, 100%, 50%),0px 0px 10px hsla(215, 100%, 50%, .75);
+  font-size: 3rem;
+  text-decoration: none;
+  color: hsl(232, 33%, 100%);
+  padding: 5px 15px;
+  text-shadow:0px 0px 10px hsl(215, 100%, 50%),0px 0px 10px hsla(215, 100%, 50%, .75),0px 0px 150px hsla(215, 100%, 50%, .75);
+  transition: text-shadow, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out 50ms;
+}
+
+.navlink-name:hover {
+  text-shadow:0px 30px 10px hsl(320, 100%, 50%),0px 0px 10px hsl(320, 100%, 50%);
+ box-shadow:inset 0px 0px 10px hsl(320, 100%, 50%),0px 0px 10px hsl(320, 100%, 50%);
+}
+
+heading {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+}
+
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: white;
+  text-shadow:0px 0px 10px hsl(260, 100%, 50%),
+    0px 0px 10px hsla(260, 100%, 50%, .75),
+    0px 0px 100px hsla(240, 100%, 50%, 1);
+  height: 45vw;
+  box-shadow: inset 0px 0px 400px hsl(215, 100%, 0%);
+  background-image: url(https://thumbs.dreamstime.com/b/wide-angle-vintage-red-brick-wall-background-large-old-red-brick-wall-background-vintage-brickwall-texture-panoramic-web-banner-130664541.jpg;)
+  /*background: rgb(21, 39, 64);
+  background: linear-gradient(
+    45deg,
+    hsla(215, 50%, 40%, 1),
+    hsla(215, 50%, 60%, 1));*/
+}
+
+#welcome-section h1{
+    font-size: 72px;
+
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.project-tile {
+  display: block;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 400px;
+  height: auto;
+  padding: 10px;
+  margin: 70px;
+  border-radius: 15px;
+}
+
+.proj-img {
+  display: block;
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+#Contact{
+  height: 15vw;
+}
