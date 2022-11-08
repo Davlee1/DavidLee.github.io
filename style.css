@@ -19,6 +19,7 @@ html {
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 2;
   font-size: 3rem;
   background: rgb(0,0,0);
   background: linear-gradient(180deg,     
@@ -91,14 +92,21 @@ heading {
   text-shadow:0px 0px 10px hsl(260, 100%, 50%),
     0px 0px 10px hsla(260, 100%, 50%, .75),
     0px 0px 100px hsla(240, 100%, 50%, 1);
-  height: 45vw;
+  position:absolute;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
   box-shadow: inset 0px 0px 400px hsl(215, 100%, 0%);
-  background-image: url(https://thumbs.dreamstime.com/b/wide-angle-vintage-red-brick-wall-background-large-old-red-brick-wall-background-vintage-brickwall-texture-panoramic-web-banner-130664541.jpg;)
-  /*background: rgb(21, 39, 64);
+  background: rgb(0, 64, 32);
   background: linear-gradient(
     45deg,
-    hsla(215, 50%, 40%, 1),
-    hsla(215, 50%, 60%, 1));*/
+    rgb(53, 53, 53),
+    rgb(255, 255, 255));
 }
 
 #welcome-section h1{
