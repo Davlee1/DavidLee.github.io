@@ -21,7 +21,7 @@ html {
   width: 100vw;
   z-index: 2;
   font-size: 3rem;
-  background: linear-gradient(180deg, hsl(0, 0%, 100%));
+  background: linear-gradient(0deg, hsl(0, 0%, 100%), hsl(0, 0%, 95%));
   /*background: linear-gradient(180deg,     
     rgba(0, 0, 0, 1) 0%,
     rgba(0, 0, 0, 0.3) 50%,
@@ -41,44 +41,46 @@ html {
     0px 0px 10px hsla(215, 100%, 50%, 0.75);
 }
 .navlink {
+  line-height: 50px;
   font-size: 3rem;
   text-decoration: none;
   color: hsl(0, 0%, 0%);
-  padding: 5px 0px 5px;
+  padding: 0px 0px 0px;
   text-shadow: 0px 0px 10px hsla(0, 0%, 32%, 0),
     0px 0px 10px hsla(215, 100%, 50%, 0), 0px 0px 150px hsla(215, 100%, 50%, 0);
-  transition: text-shadow;
+  transition:font-size;
   transition-duration: 0.3s;
   transition-timing-function: ease-out 50ms;
 }
 
 .navlink:hover {
-  text-shadow: 0px 30px 10px hsl(320, 100%, 50%),
-    0px 0px 10px hsl(320, 100%, 50%);
+  font-size: 3.5rem;
 }
 .navlink-name {
-  border-style: solid;
+  /*border-style: solid;
   border-width: 2px;
   border-radius: 50px;
   box-shadow: inset 0px 0px 10px hsl(215, 100%, 50%),
-    0px 0px 10px hsla(215, 100%, 50%, 0.75);
-  font-size: 3rem;
+    0px 0px 10px hsla(215, 100%, 50%, 0.75);*/
+  line-height: 50px;
+  font-size: 3.5rem;
   text-decoration: none;
-  color: hsl(232, 33%, 100%);
-  padding: 5px 15px;
-  text-shadow: 0px 0px 10px hsl(215, 100%, 50%),
+  color: hsl(0, 0%, 0%);
+  padding: 0px 0px;
+  /*text-shadow: 0px 0px 10px hsl(215, 100%, 50%),
     0px 0px 10px hsla(215, 100%, 50%, 0.75),
-    0px 0px 150px hsla(215, 100%, 50%, 0.75);
-  transition: text-shadow, box-shadow;
+    0px 0px 150px hsla(215, 100%, 50%, 0.75);*/
+  transition: font size;
   transition-duration: 0.3s;
   transition-timing-function: ease-out 50ms;
 }
 
 .navlink-name:hover {
-  text-shadow: 0px 30px 10px hsl(320, 100%, 50%),
+  font-size: 4rem;
+  /*text-shadow: 0px 30px 10px hsl(320, 100%, 50%),
     0px 0px 10px hsl(320, 100%, 50%);
   box-shadow: inset 0px 0px 10px hsl(320, 100%, 50%),
-    0px 0px 10px hsl(320, 100%, 50%);
+    0px 0px 10px hsl(320, 100%, 50%);*/
 }
 
 heading {
