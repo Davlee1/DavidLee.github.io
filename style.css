@@ -13,7 +13,7 @@ html {
   font-size: 15px;
   max-width: 100%;
   overflow-y: scroll;
-  overflow-x: hidden; /* Hide scrollbars */
+  /*overflow-x: hidden; /* Hide scrollbars */
 }
 a:link { text-decoration: none; }
 
@@ -22,6 +22,10 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
+
+#About,#skills,#projects,#contact{
+  scroll-margin-top: 85px;
+}
 
 #navbar {
   display: grid;
@@ -164,7 +168,7 @@ heading {
   border-radius: 15px;
 }
 
-#Contact {
+#contact {
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -175,7 +179,7 @@ heading {
   color:hsl(0, 0%, 0%);
 
   height: 25vh;
-  width: 100vw;
+  
   background: hsl(0, 0%, 59%);
   background: linear-gradient(180deg, hsl(0, 0%, 70%) 0%, hsl(0, 0%, 90%) 100%);
 }
