@@ -15,6 +15,13 @@ html {
   overflow-y: scroll;
   overflow-x: hidden; /* Hide scrollbars */
 }
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
 
 #navbar {
   display: grid;
@@ -133,11 +140,18 @@ heading {
   grid-template-columns: auto auto auto;
 }
 .project-tile {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
   background-color: hsl(0, 0%, 100%);
-  max-width: 400px;
+
+  max-width: 700px;
   height: auto;
-  padding: 10px;
+  padding: 20px;
   margin: 70px;
   border-radius: 15px;
 }
@@ -151,9 +165,22 @@ heading {
 }
 
 #Contact {
-  padding: 0px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px 50px;
   margin: 0px;
-  height: 15vh;
+  
+  font-size: 3.5rem;
+  color:hsl(0, 0%, 0%);
+
+  height: 25vh;
   width: 100vw;
-  background-color: hsl(152, 77%, 15%);
+  background: hsl(0, 0%, 59%);
+  background: linear-gradient(180deg, hsl(0, 0%, 70%) 0%, hsl(0, 0%, 90%) 100%);
+}
+#logo{
+  max-width: 200px;
+  height: auto;
+  padding: 0px 50px 0px;
 }
